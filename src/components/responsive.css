@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1200px) {
+  .movie .outer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .similar .movie .outer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu .menu-item {
+    font-size: 15px;
+    text-align: center;
+  }
+  .movie .outer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .similar .movie .outer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .OpenMovie .outer .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "img" "title" "detail" "overview";
+  }
+  .OpenMovie .outer .main .title {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .OpenMovie .outer .main .detail {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .OpenMovie .outer .main .detail .prefixTitle {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .OpenMovie .outer .main .detail .tagline {
+    text-align: center;
+  }
+  .OpenMovie .outer .main .overview {
+    font-size: 15px;
+  }
+  .OpenMovie .outer .main .overview .detail {
+    margin: 10px 10px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
